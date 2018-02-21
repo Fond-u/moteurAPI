@@ -14,8 +14,7 @@ app.config.from_object('config')
 @app.route('/')
 @app.route('/index/')
 def index():
-	return "<p>Hello world!</p>"
-    #return render_template('index.html' )
+    return render_template('index.html' )
 
 
 #@app.route('/film/<id_film>')
