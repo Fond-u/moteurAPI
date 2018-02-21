@@ -14,7 +14,8 @@ sof = load_data_csv(app.config['ENGINE_DATABASE'])
 @app.route('/')
 @app.route('/index/')
 def index():
-    return render_template('index.html' )
+	return "<p>Hello world!</p>"
+    #return render_template('index.html' )
 
 
 @app.route('/film/<id_film>')
