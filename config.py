@@ -1,6 +1,7 @@
 import os
-SECRET_KEY = '#d#JCqTTW\nilK\\7m\x0bp#\tj~#H'
 
 # Database initialization
 basedir = os.path.abspath(os.path.dirname(__file__))
-ENGINE_DATABASE = os.path.join(basedir,"mdrapp", "data", 'movie_metadata.csv')
+datadir = os.path.join(basedir,"mdrapp", "data")
+METADATA = os.path.join(datadir, 'movie_metadata.csv')
+RECOMMANDATA = os.path.join(datadir, 'recommand.csv')
