@@ -13,7 +13,8 @@ class SetOfFilm:
     	self.dataframe = dataframe
 
     def get_title_from_id(self, idf):
-    	return self.dataframe.movie_title[idf]
+    	title = self.dataframe.movie_title[idf]
+    	return title.strip()
 
     def get_link_from_id(self,idf):
     	return self.dataframe.movie_imdb_link[idf]
